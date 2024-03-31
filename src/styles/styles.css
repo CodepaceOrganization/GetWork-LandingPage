@@ -92,6 +92,9 @@ header .navbar-list li a:hover{
     text-align: center;
 }
 
+.about {
+    margin-bottom: 100px;
+}
 .service-title, .about-title{
     font-size: 180%;
 }
@@ -167,12 +170,10 @@ body {
 }
 
 .contact {
-    margin-top: 4%;
     text-align: center;
     background-color: #BF2C38;
     color: #ffffff;
     padding: 50px 0;
-    border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -238,3 +239,79 @@ button[type="submit"]:focus {
     background-color: #555555;
     color: #ffffff;
 }
+/* *********** */
+/* PRECIOS */
+/* *********** */
+:root {
+    --max-width: 1200px;
+  }
+  .section__container2{
+    color: #fff;
+	background:url(../assets/rojo.jpg) no-repeat center top;
+	background-attachment:fixed;
+	background-size:cover;
+    background-position: center center;
+    padding: 100px 0;
+    margin: auto;
+  }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--primary-red);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: black;
+  }
+  
+  .price__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+    max-width: var(--max-width);
+    margin: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste agregado */
+  }
+  
+  
+  .price__card {
+      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255,255,255,0.5); /* Color de fondo blanco semi-transparente */
+    }  
+    
+    .price__content i{
+        color: #fff;
+        font-size: 50px;
+        line-height: 55px;
+    }
+  .price__content {
+    flex: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price__content h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .price__content p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+  }
+  
+  .price__content hr {
+    margin-bottom: 1rem;
+  }
