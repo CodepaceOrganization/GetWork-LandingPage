@@ -362,15 +362,13 @@ button[type="submit"]:focus {
         border: none;
         cursor: pointer;
         position: absolute; /* Añadimos posición absoluta para controlar la ubicación */
-        top: 10px; /* Ajustamos la posición desde la parte superior */
-        right: 10px; /* Ajustamos la posición desde la derecha */
+        top: 30px; /* Ajustamos la posición desde la parte superior */
+        right: 40px; /* Ajustamos la posición desde la derecha */
     }
 
-    .hamburger-icon {
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px auto;
+    .fa-bars{
+        color: #fff;
+        font-size: 1.5rem;
     }
 
     .logo {
@@ -398,7 +396,7 @@ button[type="submit"]:focus {
     }
     
     .box-border {
-      width: 100%;
+      width: 80%;
       margin: 0 auto;
       margin-bottom: 20%;
     }
@@ -423,4 +421,10 @@ button[type="submit"]:focus {
     .form-group {
       margin-bottom: 5%;
     }
+
+    .price__card {
+      width: 80%;
+      margin: 0 auto;
+        
+      }  
   }
