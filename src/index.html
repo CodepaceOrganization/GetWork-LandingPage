@@ -7,7 +7,7 @@
     <link rel="icon" href="assets/logo-getwork.jpeg" type="image/x-icon">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/simple-line-icons@2.5.5/css/simple-line-icons.min.css" rel="stylesheet">
-    <script src="/scripts/main.js"></script>
+    <script src="/src/scripts/main.js"></script>
     <title>GetWork</title>
 </head>
 <body>
@@ -15,11 +15,14 @@
         <div class="logo">
             <img src="assets/logo-getwork.png" alt="company logo">
         </div>
+        <button class="hamburger-btn">
+            <span class="hamburger-icon"></span>
+          </button>
         <nav class="navbar-list">
             <ul>
                 <li><a href="#services" class="navbar-link">Servicios</a></li>
                 <li><a href="#about" class="navbar-link">Nosotros</a></li>
-                <li><a href="#plans" class="navbar-link">Planes</a></li>
+                <li><a href="#price" class="navbar-link">Planes</a></li>
                 <li><a href="#contact" class="navbar-link">Contacto</a></li>
                 <li><a href="login.html" class="navbar-link">Iniciar Sesión</a></li>
                 <li><a href="signin.html" class="navbar-link" id="sign-in">Crear Cuenta</a></li>
@@ -46,7 +49,7 @@
                     </div>
                 </div>
                 <div class="box-border">
-                    <img src="assets/box-recruit.jpg" class="box-img">
+                    <img src="assets/box-recruit.png" class="box-img">
                     <div class="box-body">
                         <h3 class="box-title">Reclutamiento</h3>
                         <p class="box-text">Oportunidades de reclutamiento dentro de la plataforma</p>
@@ -56,21 +59,21 @@
 
             <div class="box-group">
                 <div class="box-border">
-                    <img src="assets/box-tutorial.jpg" class="box-img" alt="referencial image">
+                    <img src="assets/box-tutorial.png" class="box-img" alt="referencial image">
                     <div class="box-body">
                         <h3 class="box-title">Tutorías privadas</h3>
                         <p class="box-text">Acceder a sesiones de tutoría personalizada con expertos</p>
                     </div>
                 </div>
                 <div class="box-border">
-                    <img src="assets/box-practice.jpg" class="box-img" alt="referencial image">
+                    <img src="assets/box-practice.png" class="box-img" alt="referencial image">
                     <div class="box-body">
                         <h3 class="box-title">Práctica interactiva</h3>
                         <p class="box-text">Resolución de problemas de codificación y recibir retroalimentación</p>
                     </div>
                 </div>
                 <div class="box-border">
-                    <img src="assets/box-relate.jpg" class="box-img" alt="referencial image">
+                    <img src="assets/box-relate.png" class="box-img" alt="referencial image">
                     <div class="box-body">
                         <h3 class="box-title">Contenido relacionado</h3>
                         <p class="box-text">Recursos de aprendizaje complementarios</p>
@@ -81,13 +84,15 @@
     </section>
     <section class="about" id="about">
         <div class="about-container">
-            <h2 class="about-title">Acerca del equipo</h2>
-            <h2 class="about-subtitle">Conoce sobre nuestra propuesta</h2>
+            <h2 class="about-title">Acerca de nosotros</h2>
+            <br><br><br>
             <div class="box-group">
                 <p class="text-about">
-                    <b>CodePace</b> es una plataforma especializada en la preparación de programadores para entrevistas técnicas en empresas de 
-                    tecnología. Nos dedicamos a ofrecer una variedad de recursos y entrenamiento diseñados para ayudar a los usuarios a 
-                    mejorar sus habilidades de codificación, prepararse para entrevistas y asegurar trabajos en la industria tecnológica.
+                    <b>CodePace</b> es mucho más que una plataforma; es tu compañero en el apasionante viaje hacia el éxito en el mundo de la tecnología. Nos enorgullecemos de ser pioneros en la preparación de programadores para enfrentar con confianza las desafiantes entrevistas técnicas en las principales empresas del sector. Desde la comodidad de tu hogar, te ofrecemos un vasto conjunto de recursos y un entrenamiento meticulosamente diseñado para potenciar tus habilidades de codificación.
+
+                    Imagina tener a tu disposición tutoriales interactivos, ejercicios prácticos y material exclusivo, todo creado con un único propósito: impulsar tu desarrollo profesional. Nuestro compromiso va más allá de enseñarte a programar; queremos brindarte las herramientas necesarias para brillar en cada entrevista, destacar entre la multitud y asegurar los trabajos más codiciados en la industria tecnológica.
+                    
+                    En CodePace, no solo creemos en el poder transformador de la educación, sino que lo vivimos día a día. Únete a nuestra comunidad de mentes brillantes, donde el aprendizaje es continuo, las oportunidades son infinitas y el futuro es tuyo para conquistar. Juntos, alcanzaremos nuevas alturas en el emocionante universo de la tecnología.
                 </p>
                 <img src="assets/box-about.png" class="box-img1" alt="referencial image">
             </div>
@@ -107,7 +112,7 @@
             <p>Ejercicios de codificación básicos</p>
             <p>Tutoriales introductorios sobre temas comunes de entrevistas</p>
             </div>
-            <a href="" class="btn">Empezar</a>
+            <a href="/src/login.html" class="btn">Empezar</a>
         </div>
           <div class="price__card" data-animation-order="1">
             <div class="price__content">
@@ -123,7 +128,7 @@
               <p>Tutoriales detallados sobre temas comunes de entrevistas</p>
               <p>Contenido exclusivo de empresas de tecnología</p>
             </div>
-            <a href="" class="btn">Suscribirme</a>
+            <a href="/src/login.html" class="btn">Suscribirme</a>
         </div>
           <div class="price__card" data-animation-order="1">
             <div class="price__content">
@@ -140,7 +145,7 @@
               <p>Contenido exclusivo de empresas de tecnología</p>
               <p>Garantía de devolución de dinero</p>
             </div>
-            <a href="" class="btn">Suscribirme</a>
+            <a href="/src/login.html" class="btn">Suscribirme</a>
         </div>
         </div>
       </section>
