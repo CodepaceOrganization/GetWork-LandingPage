@@ -32,6 +32,63 @@ body{
     font-size: var(--paragraph-size);
 }
 
+.inicio {
+    position: relative;
+    padding: 80px 0; /* Ajustar el padding según sea necesario */
+    text-align: center;
+}
+
+/* Pseudo-elemento para superponer un fondo semitransparente */
+.inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/assets/fondo.png'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4; /* Cambia este valor para ajustar la opacidad */
+}
+
+.inicio-container {
+    position: relative; /* Asegura que el contenido dentro de inicio-container esté por encima del pseudo-elemento */
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 1; /* Asegura que el contenido esté en la capa superior */
+    color: #000000; /* Ajusta el color del texto para que sea legible sobre el fondo oscuro */
+    font-family: 'Montserrat';
+}
+
+.inicio-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat';
+}
+
+.inicio-text {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.btn-descubre {
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #cd3d3d;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-descubre:hover {
+    background-color: #6a0000;
+}
+
 .navbar-container{
     display: flex;
     padding: 0;
@@ -349,7 +406,8 @@ button[type="submit"]:focus {
         left: 0;
         background-color: var(--primary-red);
         padding: 10px;
-        border-radius: 5px;
+        margin-top: -0.7rem;
+        z-index: 2;
     }
 
     .navbar-list.active {
