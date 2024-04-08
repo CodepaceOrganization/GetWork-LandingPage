@@ -32,14 +32,17 @@ body{
     font-size: var(--paragraph-size);
 }
 
-.inicio {
-    position: relative;
-    padding: 80px 0; /* Ajustar el padding según sea necesario */
+.home {
+    position: relative; /* Ajustar el padding según sea necesario */
+    height: 95vh;
     text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 /* Pseudo-elemento para superponer un fondo semitransparente */
-.inicio::before {
+.home::before {
     content: "";
     position: absolute;
     top: 0;
@@ -52,22 +55,23 @@ body{
     opacity: 0.4; /* Cambia este valor para ajustar la opacidad */
 }
 
-.inicio-container {
+.home-container {
     position: relative; /* Asegura que el contenido dentro de inicio-container esté por encima del pseudo-elemento */
     max-width: 800px;
     margin: 0 auto;
     z-index: 1; /* Asegura que el contenido esté en la capa superior */
     color: #000000; /* Ajusta el color del texto para que sea legible sobre el fondo oscuro */
     font-family: 'Montserrat';
+    margin-bottom: 7%;
 }
 
-.inicio-title {
-    font-size: 2.5rem;
+.home-title {
+    font-size: 5rem;
     margin-bottom: 20px;
     font-family: 'Montserrat';
 }
 
-.inicio-text {
+.home-text {
     font-family: 'Montserrat';
     font-size: 1.2rem;
     margin-bottom: 40px;
