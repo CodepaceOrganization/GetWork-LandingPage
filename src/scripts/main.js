@@ -1,3 +1,7 @@
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("down",window.scrollY>0);
+})
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerBtn = document.querySelector('.hamburger-btn');
     const navbarList = document.querySelector('.navbar-list');
