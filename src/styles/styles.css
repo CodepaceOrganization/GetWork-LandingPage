@@ -20,6 +20,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html, body{
+    width:100%;
+    overflow-x:hidden;
+}
+
 body, h1, h2, h3, h4, p, ul, ol, li {
     font-family: var(--font);
     margin: 0;
@@ -523,6 +529,7 @@ button[type="submit"]:focus {
         align-items: flex-start;
         padding: 10px;
         position: relative;
+        position: fixed; /* Cambiar a posición fija */
     }
 
     .navbar-list {
@@ -547,9 +554,11 @@ button[type="submit"]:focus {
         background: none;
         border: none;
         cursor: pointer;
-        position: absolute; /* Añadimos posición absoluta para controlar la ubicación */
+        position: fixed; /* Cambiar a posición fija */
         top: 30px; /* Ajustamos la posición desde la parte superior */
         right: 40px; /* Ajustamos la posición desde la derecha */
+        z-index: 999; /* Asegurar que esté por encima de otros elementos */
+
     }
 
     .fa-bars{
@@ -636,6 +645,9 @@ button[type="submit"]:focus {
         background: rgba(191, 44, 56);
      }  
     
+     .home-container{
+        margin-top: 50px;
+     }
     /* Responsive Styles */
     
     @media screen and (max-width: 768px) {
