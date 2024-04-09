@@ -39,7 +39,7 @@ body{
 }
 
 .home {
-    position: relative; /* Ajustar el padding según sea necesario */
+    position: relative; 
     height: 100vh;
     text-align: center;
     display: flex; 
@@ -55,18 +55,17 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/src/assets/fondo.png'); /* Ruta de tu imagen de fondo */
+    background-image: url('/assets/fondo.png'); 
     background-size: cover;
     background-position: center;
-    opacity: 0.4; /* Cambia este valor para ajustar la opacidad */
+    opacity: 0.4; 
 }
 
 .home-container {
-    position: relative; /* Asegura que el contenido dentro de inicio-container esté por encima del pseudo-elemento */
-    max-width: 800px;
+    position: relative;
     margin: 0 auto;
-    z-index: 1; /* Asegura que el contenido esté en la capa superior */
-    color: #000000; /* Ajusta el color del texto para que sea legible sobre el fondo oscuro */
+    z-index: 1; 
+    color: #000000; 
     font-family: 'Montserrat';
 }
 
@@ -289,16 +288,16 @@ textarea {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #cccccc;
-    background-color: #ffffff; /* Rellenado de blanco */
-    color: #555555; /* Letras matizadas */
+    background-color: #ffffff; 
+    color: #555555; 
     font-size: 1em;
-    transition: border-color 0.3s; /* Transición suave del color del borde */
+    transition: border-color 0.3s; 
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #333333; /* Borde al enfocar */
+    border-color: #333333; 
 }
 
 textarea {
@@ -360,7 +359,7 @@ button[type="submit"]:focus {
     gap: 2rem;
     max-width: var(--max-width);
     margin: auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste agregado */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
   }
   
   
@@ -370,7 +369,7 @@ button[type="submit"]:focus {
       flex-direction: column;
       text-align: center;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-      background-color: rgba(255,255,255,0.5); /* Color de fondo blanco semi-transparente */
+      background-color: rgba(255,255,255,0.5);
     }  
     
     .price__content i{
@@ -408,11 +407,10 @@ button[type="submit"]:focus {
     width: 25px;
     height: 3px;
     background-color: #fff;
-    margin: 5px auto; /* Alineación vertical al centro */
+    margin: 5px auto; 
   }
 
 
-  /* Footer Styles */
 
 /* Footer Styles */
 
@@ -529,7 +527,7 @@ button[type="submit"]:focus {
         align-items: flex-start;
         padding: 10px;
         position: relative;
-        position: fixed; /* Cambiar a posición fija */
+        position: fixed; 
     }
 
     .navbar-list {
@@ -554,10 +552,10 @@ button[type="submit"]:focus {
         background: none;
         border: none;
         cursor: pointer;
-        position: fixed; /* Cambiar a posición fija */
-        top: 30px; /* Ajustamos la posición desde la parte superior */
-        right: 40px; /* Ajustamos la posición desde la derecha */
-        z-index: 999; /* Asegurar que esté por encima de otros elementos */
+        position: fixed; 
+        top: 30px; 
+        right: 40px; 
+        z-index: 999;
 
     }
 
