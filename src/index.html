@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=`, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="assets/logo-getwork.jpeg" type="image/x-icon">
-    <script src="/scripts/main.js"></script>
+    <link rel="icon" href="assets/logo-getwork.png" type="image/x-icon">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/simple-line-icons@2.5.5/css/simple-line-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/src/scripts/main.js"></script>
     <title>GetWork</title>
 </head>
 <body>
     <header class="navbar-container">
         <div class="logo">
-            <img src="assets/logo-getwork.png" alt="company logo">
+            <a href="#home"><img src="assets/logo-getwork.png" alt="company logo"></a>
         </div>
+        <button class="hamburger-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         <nav class="navbar-list">
             <ul>
                 <li><a href="#services" class="navbar-link">Servicios</a></li>
                 <li><a href="#about" class="navbar-link">Nosotros</a></li>
-                <li><a href="#plans" class="navbar-link">Planes</a></li>
+                <li><a href="#price" class="navbar-link">Planes</a></li>
                 <li><a href="#contact" class="navbar-link">Contacto</a></li>
                 <li><a href="login.html" class="navbar-link">Iniciar Sesión</a></li>
                 <li><a href="signin.html" class="navbar-link" id="sign-in">Crear Cuenta</a></li>
             </ul>
         </nav>
     </header>    
+    <section class="home" id="home">
+        <div class="home-container">
+            <h1 class="home-title">Prepárate para tu próxima entrevista técnica</h1>
+            <p class="home-text">Conviértete en un experto en codificación y consigue el trabajo de tus sueños</p>
+            <a href="#services" class="btn-descubre">Descubre más</a>
+        </div>
+    </section>
     <section class="services" id="services">
         <div class="service-container">
             <h2 class="service-title">Servicios que ofrecemos</h2>
@@ -44,7 +59,7 @@
                     </div>
                 </div>
                 <div class="box-border">
-                    <img src="assets/box-recruit.jpg" class="box-img">
+                    <img src="assets/box-recruit.png" class="box-img">
                     <div class="box-body">
                         <h3 class="box-title">Reclutamiento</h3>
                         <p class="box-text">Oportunidades de reclutamiento dentro de la plataforma</p>
@@ -54,21 +69,21 @@
 
             <div class="box-group">
                 <div class="box-border">
-                    <img src="assets/box-tutorial.jpg" class="box-img" alt="referencial image">
+                    <img src="assets/box-tutorial.png" class="box-img" alt="referencial image">
                     <div class="box-body">
                         <h3 class="box-title">Tutorías privadas</h3>
                         <p class="box-text">Acceder a sesiones de tutoría personalizada con expertos</p>
                     </div>
                 </div>
                 <div class="box-border">
-                    <img src="assets/box-practice.jpg" class="box-img" alt="referencial image">
+                    <img src="assets/box-practice.png" class="box-img" alt="referencial image">
                     <div class="box-body">
                         <h3 class="box-title">Práctica interactiva</h3>
                         <p class="box-text">Resolución de problemas de codificación y recibir retroalimentación</p>
                     </div>
                 </div>
                 <div class="box-border">
-                    <img src="assets/box-relate.jpg" class="box-img" alt="referencial image">
+                    <img src="assets/box-relate.png" class="box-img" alt="referencial image">
                     <div class="box-body">
                         <h3 class="box-title">Contenido relacionado</h3>
                         <p class="box-text">Recursos de aprendizaje complementarios</p>
@@ -79,20 +94,71 @@
     </section>
     <section class="about" id="about">
         <div class="about-container">
-            <h2 class="about-title">Acerca del equipo</h2>
-            <h2 class="about-subtitle">Conoce sobre nuestra propuesta</h2>
+            <h2 class="about-title">Acerca de nosotros</h2>
+            <br><br><br>
             <div class="box-group">
                 <p class="text-about">
-                    <b>CodePace</b> es una plataforma especializada en la preparación de programadores para entrevistas técnicas en empresas de 
-                    tecnología. Nos dedicamos a ofrecer una variedad de recursos y entrenamiento diseñados para ayudar a los usuarios a 
-                    mejorar sus habilidades de codificación, prepararse para entrevistas y asegurar trabajos en la industria tecnológica.
+                    <b>CodePace</b> es mucho más que una plataforma; es tu compañero en el apasionante viaje hacia el éxito en el mundo de la tecnología. Nos enorgullecemos de ser pioneros en la preparación de programadores para enfrentar con confianza las desafiantes entrevistas técnicas en las principales empresas del sector. Desde la comodidad de tu hogar, te ofrecemos un vasto conjunto de recursos y un entrenamiento meticulosamente diseñado para potenciar tus habilidades de codificación.
+
+                    Imagina tener a tu disposición tutoriales interactivos, ejercicios prácticos y material exclusivo, todo creado con un único propósito: impulsar tu desarrollo profesional. Nuestro compromiso va más allá de enseñarte a programar; queremos brindarte las herramientas necesarias para brillar en cada entrevista, destacar entre la multitud y asegurar los trabajos más codiciados en la industria tecnológica.
+                    
+                    En CodePace, no solo creemos en el poder transformador de la educación, sino que lo vivimos día a día. Únete a nuestra comunidad de mentes brillantes, donde el aprendizaje es continuo, las oportunidades son infinitas y el futuro es tuyo para conquistar. Juntos, alcanzaremos nuevas alturas en el emocionante universo de la tecnología.
                 </p>
                 <img src="assets/box-about.png" class="box-img1" alt="referencial image">
             </div>
         </div>
     </section>
-    <section class="plans" id="plans">
-    </section>
+    <section class="section__container2" id="price">
+        <div class="price__grid">
+          <div class="price__card" data-animation-order="1">
+            <div class="price__content">
+              <h4><strong>Free</strong></h4>
+              <i class="icon-layers"></i>
+              <br><br>
+              <p>Este plan es una prueba gratuita por tarjeta de crédito usada, cuenta con diversas funciones limitadasd en las cuales puedes ver una prueba del servicio que brinda GetWork y decicidir si adquirr algún plan Premium.</p>
+              <hr />
+              <h4>Gratuito</h4>
+              <p>Acceso limitado a preguntas frecuentes de entrevistas seleccionadas</p>
+            <p>Ejercicios de codificación básicos</p>
+            <p>Tutoriales introductorios sobre temas comunes de entrevistas</p>
+            </div>
+            <a href="/src/login.html" class="btn">Empezar</a>
+        </div>
+          <div class="price__card" data-animation-order="1">
+            <div class="price__content">
+              <h4>Plan Estudiante</h4>
+              <i class="icon-bulb"></i>
+              <br><br>
+              <p>Con este plan de suscripción mensual, los estudiantes tendrán acceso a recursos básicos de preparación para entrevistas técnicas durante un mes.</p>
+              <hr />
+              <h4>S/.35.00</h4>
+              <p>Acceso completo a preguntas frecuentes de entrevistas</p>
+              <p>Ejercicios de codificación práctica ilimitados</p>
+              <p>Simulacros de entrevistas en vivo con expertos</p>
+              <p>Tutoriales detallados sobre temas comunes de entrevistas</p>
+              <p>Contenido exclusivo de empresas de tecnología</p>
+            </div>
+            <a href="/src/login.html" class="btn">Suscribirme</a>
+        </div>
+          <div class="price__card" data-animation-order="1">
+            <div class="price__content">
+              <h4>Plan Desarrollador</h4>
+              <i class="icon-chemistry"></i>
+              <br><br>
+              <p>Este plan está dirigido a desarrolladores profesionales que desean mejorar sus habilidades y prepararse para entrevistas técnicas en empresas de tecnología. Obtén acceso a recursos avanzados y sesiones de tutoría personalizada.</p>
+              <hr />
+              <h4>S/.69.90</h4>
+              <p>Acceso completo a todas las preguntas frecuentes de entrevistas</p>
+              <p>Ejercicios de codificación práctica avanzada</p>
+              <p>Sesiones de tutoría personalizada con expertos</p>
+              <p>Simulacros de entrevistas en vivo con reclutadores</p>
+              <p>Contenido exclusivo de empresas de tecnología</p>
+              <p>Garantía de devolución de dinero</p>
+            </div>
+            <a href="/src/login.html" class="btn">Suscribirme</a>
+        </div>
+        </div>
+      </section>
 
     <section class="contact" id="contact">
         <div class="contact-container">
@@ -117,6 +183,39 @@
             </div>
         </div>
     </section>
-    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3 class="footer-title">Contacto</h3>
+                <p class="footer-text">Para más información, contáctenos:</p>
+                <ul class="footer-contact">
+                    <li><i class="icon-location-pin"></i> Dirección: Av. Principal 123, Lima, Perú</li>
+                    <li><i class="icon-envelope"></i> Correo electrónico: info@getwork.com</li>
+                    <li><i class="icon-phone"></i> Teléfono: +51 123 456 789</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Enlaces útiles</h3>
+                <ul class="footer-menu">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#price">Planes</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-title">Síguenos</h3>
+                <ul class="footer-icons">
+                    <li><a href="#"><i class="icon-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-social-instagram"></i></a></li>
+                    <li><a href="#"><i class="icon-social-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GetWork. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
