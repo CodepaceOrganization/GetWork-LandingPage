@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/logo-getwork.png" type="image/x-icon">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/simple-line-icons@2.5.5/css/simple-line-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/src/scripts/main.js"></script>
+    <title>GetWork</title>
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <a href="#home"><img src="assets/logo-getwork.png" alt="company logo"></a>
+        </div>
+        <button class="hamburger-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav class="navbar-list">
+            <ul>
+                <li><a href="index.html" class="language-switcher-item">Change language</a></li>
+                <li><a href="#services" class="navbar-link">Services</a></li>
+                <li><a href="#about" class="navbar-link">About Us</a></li>
+                <li><a href="#price" class="navbar-link">Plans</a></li>
+                <li><a href="#contact" class="navbar-link">Contact Us</a></li>
+                <li><a href="login.html" class="navbar-link">Log in</a></li>
+                <li><a href="signin.html" class="navbar-link" id="sign-in">Create Account</a></li>
+            </ul>
+        </nav>
+    </header>    
+    <section class="home" id="home">
+        <div class="home-container">
+            <h1 class="home-title">Prepare for your next technical interview</h1>
+            <p class="home-text">Become a coding expert and land your dream job</p>
+            <a href="#services" class="btn-descubre">Discover more</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="service-container">
+            <h2 class="service-title">services we offer</h2>
+            <h2 class="service-subtitle">See everything we offer you</h2>
+            <div class="box-group">
+                <div class="box-border">
+                    <img src="assets/box-resource.png" class="box-img">
+                    <div class="box-body">
+                        <h3 class="box-title">Quality resources</h3>
+                        <p class="box-text">We will provide quality resources</p>
+                    </div>
+                </div>
+                <div class="box-border">
+                    <img src="assets/box-exclusive.png" class="box-img">
+                    <div class="box-body">
+                        <h3 class="box-title">Exclusive content</h3>
+                        <p class="box-text">Access to exclusive content provided by technology companies</p>
+                    </div>
+                </div>
+                <div class="box-border">
+                    <img src="assets/box-recruit.png" class="box-img">
+                    <div class="box-body">
+                        <h3 class="box-title">Recruitment</h3>
+                        <p class="box-text">Recruitment opportunities within the platform</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-group">
+                <div class="box-border">
+                    <img src="assets/box-tutorial.png" class="box-img" alt="referencial image">
+                    <div class="box-body">
+                        <h3 class="box-title">Private tutoring</h3>
+                        <p class="box-text">Access personalized tutoring sessions with experts</p>
+                    </div>
+                </div>
+                <div class="box-border">
+                    <img src="assets/box-practice.png" class="box-img" alt="referencial image">
+                    <div class="box-body">
+                        <h3 class="box-title">Interactive practice</h3>
+                        <p class="box-text">Solve coding problems and receive feedback</p>
+                    </div>
+                </div>
+                <div class="box-border">
+                    <img src="assets/box-relate.png" class="box-img" alt="referencial image">
+                    <div class="box-body">
+                        <h3 class="box-title">Related content</h3>
+                        <p class="box-text">Supplemental Learning Resources</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2 class="about-title">About us</h2>
+            <br><br><br>
+            <div class="box-group">
+                <p class="text-about">
+                    <b>CodePace</b> It is much more than a platform; is your companion on the exciting journey to success in the world of technology. We pride ourselves on being pioneers in preparing programmers to confidently face challenging technical interviews at top companies in the sector. From the comfort of your home, we offer you a vast set of resources and meticulously designed training to boost your coding skills.
+
+                    Imagine having interactive tutorials, practical exercises and exclusive material at your disposal, all created with a single purpose: to boost your professional development. Our commitment goes beyond teaching you how to program; We want to give you the tools you need to shine in every interview, stand out from the crowd, and secure the most coveted jobs in the tech industry.
+                   
+                    At CodePace, we not only believe in the transformative power of education, we live it every day. Join our community of brilliant minds, where learning is continuous, opportunities are endless, and the future is yours to conquer. Together, we will reach new heights in the exciting universe of technology.
+                </p>
+                <img src="assets/box-about.png" class="box-img1" alt="referencial image">
+            </div>
+        </div>
+    </section>
+    <section class="section__container2" id="price">
+        <div class="price__grid">
+        <div class="price__card" data-animation-order="1">
+            <div class="price__content">
+            <h4><strong>Free</strong></h4>
+            <i class="icon-layers"></i>
+            <br><br>
+            <p>This plan is a free trial per credit card used, it has various limited functions in which you can see a trial of the service provided by GetWork and decide whether to purchase a Premium plan.</p>
+            <hr />
+            <h4>Gratuitous</h4>
+            <p>Limited access to selected interview FAQs</p>
+            <p>Basic Coding Exercises</p>
+            <p>Introductory tutorials on common interview topics</p>
+            </div>
+            <a href="/src/login.html" class="btn">Begin</a>
+        </div>
+        <div class="price__card" data-animation-order="1">
+            <div class="price__content">
+            <h4>Student Plan</h4>
+            <i class="icon-bulb"></i>
+            <br><br>
+            <p>With this monthly subscription plan, students will have access to basic technical interview preparation resources for one month.</p>
+            <hr />
+            <h4>S/.35.00</h4>
+            <p>Full access to frequently asked interview questions</p>
+            <p>Unlimited hands-on coding exercises</p>
+            <p>Mock live interviews with experts</p>
+            <p>Detailed tutorials on common interview topics</p>
+            <p>Exclusive content from technology companies</p>
+            </div>
+            <a href="/src/login.html" class="btn">Subscribe</a>
+        </div>
+        <div class="price__card" data-animation-order="1">
+            <div class="price__content">
+            <h4>Developer Plan</h4>
+            <i class="icon-chemistry"></i>
+            <br><br>
+            <p>This plan is aimed at professional developers who want to improve their skills and prepare for technical interviews at technology companies. Get access to advanced resources and personalized tutoring sessions.</p>
+            <hr />
+            <h4>S/.69.90</h4>
+            <p>Full access to all frequently asked interview questions</p>
+            <p>Advanced Practical Coding Exercises</p>
+            <p>Personalized tutoring sessions with experts</p>
+            <p>Mock live interviews with recruiters</p>
+            <p>Exclusive content from technology companies</p>
+            <p>Money Back Guarantee</p>
+            </div>
+            <a href="/src/login.html" class="btn">Subscribe</a>
+        </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="contact-title">Contact us</h2>
+            <form id="contact-form" action="procesar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Name:</label>
+                    <input type="text" id="nombre" name="nombre" required aria-required="true" placeholder="Introduce your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Message:</label>
+                    <textarea id="mensaje" name="mensaje" required aria-required="true" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <div id="mensaje-exito" style="display: none;">
+                <p>Your query has been sent successfully. we will contact you </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3 class="footer-title">Contact Us</h3>
+                <p class="footer-text">For more information, contact us:</p>
+                <ul class="footer-contact">
+                    <li><i class="icon-location-pin"></i> Address: Av. Principal 123, Lima, Peru</li>
+                    <li><i class="icon-envelope"></i> Email: info@getwork.com</li>
+                    <li><i class="icon-phone"></i> Telephone: +51 123 456 789</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-title">Helpful Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#price">Plans</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer-title">Síguenos</h3>
+                <ul class="footer-icons">
+                    <li><a href="#"><i class="icon-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-social-instagram"></i></a></li>
+                    <li><a href="#"><i class="icon-social-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GetWork. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
